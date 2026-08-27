@@ -77,14 +77,6 @@ if (window.hljs) {
 }
 </script>
 
-
-
-
-
-
-
-
-
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -113,8 +105,6 @@ pre code {
   padding: 0;
 }
 </style>
-
-
 
 <style type="text/css">
 .tabset-dropdown > .nav-tabs {
@@ -167,15 +157,9 @@ pre code {
 
 <body>
 
-
 <div class="container-fluid main-container">
 
-
-
-
 <div id="header">
-
-
 
 <h1 class="title toc-ignore">Centroide de Nicho - IMARPE</h1>
 <h4 class="author">Patron-Rivero, C.</h4>
@@ -183,9 +167,7 @@ pre code {
 
 </div>
 
-
 <style type="text/css">
-/* Configuración general del scroll por secciones */
 html, body {
   height: 100vh;
   margin: 0;
@@ -194,7 +176,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Cada sección principal actúa como una diapositiva */
 .section.level1 {
   min-height: 100vh;
   width: 100%;
@@ -206,17 +187,16 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow-y: auto; /* Permite scroll interno si el contenido excede la pantalla */
+  overflow-y: auto; 
+  gap: 30px;
 }
 
-/* Subsecciones (nivel 2) con flujo normal para que no se encimen */
 .section.level2 {
   width: 100%;
   margin: 30px 0;
   text-align: left;
 }
 
-/* Ajuste específico para bloques de código y consola de R */
 pre.sourceCode, div.sourceCode {
   text-align: left;
   max-width: 900px;
@@ -224,11 +204,10 @@ pre.sourceCode, div.sourceCode {
   margin: 15px auto;
   background-color: #f8f9fa;
   border-radius: 5px;
-  max-height: 40vh; /* Scroll propio si el código es muy largo */
+  max-height: 40vh; 
   overflow-y: auto;
 }
 
-/* Limitar tamaño de imágenes para que no desborden la vista */
 .section.level1 img, .section.level2 img {
   max-height: 55vh;
   max-width: 100%;
@@ -237,7 +216,6 @@ pre.sourceCode, div.sourceCode {
   display: block;
 }
 
-/* Arreglar el índice flotante (TOC) */
 #TOC {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
@@ -245,21 +223,27 @@ pre.sourceCode, div.sourceCode {
   z-index: 1000;
 }
 
+/* Estilo para las tablas impresas por R */
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+}
 </style>
+
 <div id="qué-dirige-la-abundancia" class="section level1">
 <h1>¿Qué dirige la abundancia?</h1>
 <p><img src="images/abund.jpg" width="655" /></p>
 </div>
-<div id="qué-dirige-la-distribución-de-una-especie"
-class="section level1">
+<div id="qué-dirige-la-distribución-de-una-especie" class="section level1">
 <h1>¿Qué dirige la distribución de una especie?</h1>
 <p><img src="images/BAM_2.jpg" width="1618" /></p>
 </div>
-<div
-id="hay-relación-entre-la-abundancia-y-los-factores-de-las-distribuciones"
-class="section level1">
-<h1>¿Hay relación entre la abundancia y los factores de las
-distribuciones?</h1>
+<div id="hay-relación-entre-la-abundancia-y-los-factores-de-las-distribuciones" class="section level1">
+<h1>¿Hay relación entre la abundancia y los factores de las distribuciones?</h1>
 <p><img src="images/rel.jpg" width="2353" /></p>
 </div>
 <div id="qué-respuestas-esperamos" class="section level1">
@@ -282,26 +266,20 @@ distribuciones?</h1>
 <h1>¿Dónde esperaría mayor abundancia?</h1>
 <p><img src="images/response.jpeg" width="2212" /></p>
 </div>
-<div
-id="qué-factores-limitantes-de-la-abundancia-tendrían-que-existir-en-el-centro-geográfico"
-class="section level1">
-<h1>¿Qué factores limitantes de la abundancia tendrían que existir en el
-centro geográfico?</h1>
+<div id="qué-factores-limitantes-de-la-abundancia-tendrían-que-existir-en-el-centro-geográfico" class="section level1">
+<h1>¿Qué factores limitantes de la abundancia tendrían que existir en el centro geográfico?</h1>
 <p><img src="images/BAM_2.jpg" width="1618" /></p>
 </div>
 <div id="hipótesis-centroide-abundante-abiótico" class="section level1">
 <h1>Hipótesis centroide-abundante (abiótico)</h1>
 <p><img src="images/centroid1.png" width="2316" /></p>
 </div>
-<div id="hipótesis-centroide-abundante-abiótico-1"
-class="section level1">
+<div id="hipótesis-centroide-abundante-abiótico-1" class="section level1">
 <h1>Hipótesis centroide-abundante (abiótico)</h1>
-<p><strong>Tasa de nacimiento, mortalidad, crecimiento ~ temperatura,
-humedad, pH, depredadores</strong></p>
+<p><strong>Tasa de nacimiento, mortalidad, crecimiento ~ temperatura, humedad, pH, depredadores</strong></p>
 <p><img src="images/centroid2.png" width="1512" /></p>
 </div>
-<div id="hipótesis-centroide-abundante-abiótico-2"
-class="section level1">
+<div id="hipótesis-centroide-abundante-abiótico-2" class="section level1">
 <h1>Hipótesis centroide-abundante (abiótico)</h1>
 <p><img src="images/centroid3.png" width="1354" /></p>
 </div>
@@ -309,37 +287,27 @@ class="section level1">
 <h1>Cuándo se presenta formalmente?</h1>
 <p><img src="images/centroid4.jpg" width="724" /></p>
 </div>
-<div id="cuál-es-correcta-ambas-ninguna-hay-más-opciones"
-class="section level1">
+<div id="cuál-es-correcta-ambas-ninguna-hay-más-opciones" class="section level1">
 <h1>¿Cuál es correcta? ¿Ambas, ninguna, hay más opciones?</h1>
 <p><br style="display: block; margin-top: 25px;"></p>
-<p><a href="https://doi.org/10.1111/ecog.06365"
-class="uri">https://doi.org/10.1111/ecog.06365</a></p>
-<p><a href="https://doi.org/10.1002/ecog.07711"
-class="uri">https://doi.org/10.1002/ecog.07711</a></p>
+<p><a href="https://doi.org/10.1111/ecog.06365" class="uri">https://doi.org/10.1111/ecog.06365</a></p>
+<p><a href="https://doi.org/10.1002/ecog.07711" class="uri">https://doi.org/10.1002/ecog.07711</a></p>
 <p><img src="images/both2.jpg" width="1125" /></p>
 </div>
-<div id="cuál-es-correcta-ambas-ninguna-hay-más-opciones-1"
-class="section level1">
+<div id="cuál-es-correcta-ambas-ninguna-hay-más-opciones-1" class="section level1">
 <h1>¿Cuál es correcta? ¿Ambas, ninguna, hay más opciones?</h1>
 <p><img src="images/both3.jpg" width="756" /></p>
 </div>
-<div
-id="estas-propuestas-de-centralidad-de-nicho-ecológico-sobre-qué-metodología-se-hacen"
-class="section level1">
-<h1>¿Estas propuestas de centralidad de nicho ecológico sobre qué
-metodología se hacen?</h1>
+<div id="estas-propuestas-de-centralidad-de-nicho-ecológico-sobre-qué-metodología-se-hacen" class="section level1">
+<h1>¿Estas propuestas de centralidad de nicho ecológico sobre qué metodología se hacen?</h1>
 <p><img src="images/BAM_mve.png" width="544" /></p>
 </div>
 <div id="minimum-volume-ellipsoids-mve" class="section level1">
 <h1>Minimum volume ellipsoids (MVE)</h1>
 <p><img src="images/mve.jpg" width="410" /></p>
 </div>
-<div
-id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides"
-class="section level1">
-<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos
-(elipsoides)?</h1>
+<div id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides" class="section level1">
+<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos (elipsoides)?</h1>
 <p><br style="display: block; margin-top: 25px;"></p>
 <p><strong>1.</strong></p>
 <p><br style="display: block; margin-top: 25px;"></p>
@@ -347,29 +315,20 @@ class="section level1">
 <p><br style="display: block; margin-top: 25px;"></p>
 <p><strong>3.</strong></p>
 </div>
-<div
-id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides-1"
-class="section level1">
-<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos
-(elipsoides)?</h1>
+<div id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides-1" class="section level1">
+<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos (elipsoides)?</h1>
 <p><br style="display: block; margin-top: 25px;"></p>
 <p><strong>1. Estimar el Nicho Fundamental</strong></p>
 </div>
-<div
-id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides-2"
-class="section level1">
-<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos
-(elipsoides)?</h1>
+<div id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides-2" class="section level1">
+<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos (elipsoides)?</h1>
 <p><br style="display: block; margin-top: 25px;"></p>
 <p><strong>1. Estimar el Nicho Fundamental</strong></p>
 <p><br style="display: block; margin-top: 25px;"></p>
 <p><strong>2. Estimar el Nicho Fundamental</strong></p>
 </div>
-<div
-id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides-3"
-class="section level1">
-<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos
-(elipsoides)?</h1>
+<div id="cuáles-son-los-tres-objetivos-al-estimar-nichos-ecológicos-elipsoides-3" class="section level1">
+<h1>¿Cuáles son los tres objetivos al estimar nichos ecológicos (elipsoides)?</h1>
 <p><br style="display: block; margin-top: 25px;"></p>
 <p><strong>1. Estimar el Nicho Fundamental</strong></p>
 <p><br style="display: block; margin-top: 25px;"></p>
@@ -388,8 +347,7 @@ class="section level1">
 <div id="thinning" class="section level1">
 <h1>Thinning</h1>
 <p><br style="display: block; margin-top: 25px;"></p>
-<p><a href="https://doi.org/10.1111/2041-210X.13525"
-class="uri">https://doi.org/10.1111/2041-210X.13525</a></p>
+<p><a href="https://doi.org/10.1111/2041-210X.13525" class="uri">https://doi.org/10.1111/2041-210X.13525</a></p>
 <p><img src="images/thin.jpg" width="1362" /></p>
 </div>
 <div id="thinning-1" class="section level1">
@@ -420,6 +378,19 @@ class="uri">https://doi.org/10.1111/2041-210X.13525</a></p>
 <h1>Registros de presencia</h1>
 <pre class="r"><code>gbif &lt;- read.csv(&quot;A_mon.csv&quot;)
 head(gbif)</code></pre>
+<div class="data-frame">
+<table class="table table-condensed">
+<thead><tr><th scope=col>decimalLongitude</th><th scope=col>decimalLatitude</th></tr></thead>
+<tbody>
+	<tr><td>-48.92000</td><td>-25.44000</td></tr>
+	<tr><td>-45.38361</td><td>-23.27111</td></tr>
+	<tr><td>-45.37889</td><td>-23.26944</td></tr>
+	<tr><td>-45.29028</td><td>-23.17306</td></tr>
+	<tr><td>-45.29139</td><td>-23.17222</td></tr>
+	<tr><td>-46.35361</td><td>-23.36722</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="variables" class="section level1">
 <h1>Variables</h1>
@@ -437,6 +408,19 @@ plot(vars)</code></pre>
 data &lt;- extract(vars, gbif[, c(1:2)], df = TRUE)
 data &lt;- cbind(gbif, data[c(-1)])
 head(data)</code></pre>
+<div class="data-frame">
+<table class="table table-condensed">
+<thead><tr><th scope=col>decimalLongitude</th><th scope=col>decimalLatitude</th><th scope=col>pc_1</th><th scope=col>pc_2</th><th scope=col>pc_3</th><th scope=col>pc_4</th><th scope=col>pc_5</th><th scope=col>pc_6</th></tr></thead>
+<tbody>
+	<tr><td>-48.92000</td><td>-25.44000</td><td>-5.547382</td><td> 0.9314649</td><td>5.623014</td><td>0.6368241</td><td>-1.2884127</td><td>-0.4470015</td></tr>
+	<tr><td>-45.38361</td><td>-23.27111</td><td>-2.936060</td><td>-2.5214243</td><td>2.845176</td><td>0.8123581</td><td>-0.9206381</td><td>-1.9536577</td></tr>
+	<tr><td>-45.37889</td><td>-23.26944</td><td>-2.936060</td><td>-2.5214243</td><td>2.845176</td><td>0.8123581</td><td>-0.9206381</td><td>-1.9536577</td></tr>
+	<tr><td>-45.29028</td><td>-23.17306</td><td>-2.895310</td><td>-2.7990530</td><td>2.864421</td><td>0.8160824</td><td>-0.8181877</td><td>-2.1669090</td></tr>
+	<tr><td>-45.29139</td><td>-23.17222</td><td>-2.895310</td><td>-2.7990530</td><td>2.864421</td><td>0.8160824</td><td>-0.8181877</td><td>-2.1669090</td></tr>
+	<tr><td>-46.35361</td><td>-23.36722</td><td>-3.175805</td><td>-2.3592458</td><td>2.759780</td><td>0.5001770</td><td>-1.5553223</td><td>-2.1066699</td></tr>
+</tbody>
+</table>
+</div>
 <div id="hipótesis-m" class="section level2">
 <h2>Hipótesis M</h2>
 <pre class="r"><code>library(terra)
@@ -476,6 +460,11 @@ points(data[, c(1:2)])</code></pre>
 </div>
 <div id="visualizar-el-ellipsoide" class="section level1">
 <h1>Visualizar el ellipsoide</h1>
+<div class="figure">
+<div id="rgl45276" style="width:672px;height:480px;" class="rglWebGL html-widget" aria-labelledby="rgl45276-aria"></div>
+<script type="application/json" data-for="rgl45276">{"x":{"material":{"color":"#000000","alpha":1,"lit":true,"ambient":"#000000","specular":"#FFFFFF","emission":"#000000","shininess":50,"smooth":true,"front":"filled","back":"filled","size":3,"lwd":1,"fog":true,"point_antialias":false,"line_antialias":false,"texture":null,"textype":"rgb","texmode":"modulate","texmipmap":false,"texminfilter":"linear","texmagfilter":"linear","texenvmap":false,"depth_mask":true,"depth_test":"less","isTransparent":false,"polygon_offset":[0,0],"margin":"","floating":false,"tag":"","blend":["src_alpha","one_minus_src_alpha"]},"rootSubscene":7,"objects":{"13":{"id":13,"type":"quads","material":{"front":"lines","back":"lines"},"vertices":"0","colors":"2","centers":"3","normals":"1","ignoreExtent":false,"flags":32771},"14":{"id":14,"type":"points","material":{"lit":false,"size":5},"vertices":"4","colors":"5","centers":"6","ignoreExtent":false,"flags":34816},"15":{"id":15,"type":"lines","material":{"lit":false},"vertices":"7","colors":"8","centers":"9","ignoreExtent":true,"flags":32832},"11":{"id":11,"type":"light","vertices":[[0,0,1]],"colors":[[1,1,1,1],[1,1,1,1],[1,1,1,1]],"viewpoint":true,"finite":false},"10":{"id":10,"type":"background","material":{},"colors":"10","centers":"11","sphere":false,"fogtype":"none","fogscale":1,"flags":32768},"12":{"id":12,"type":"background","material":{"lit":false,"back":"lines"},"colors":"12","centers":"13","sphere":false,"fogtype":"none","fogscale":1,"flags":32768},"7":{"id":7,"type":"subscene","par3d":{"antialias":8,"FOV":30,"ignoreExtent":false,"listeners":7,"mouseMode":{"none":"none","left":"trackball","right":"zoom","middle":"fov","wheel":"pull"},"observer":[0,0,37.93081665039062],"modelMatrix":[[1,0,0,0.478907585144043],[0,0.3420201539993286,0.9396926164627075,-1.286399841308594],[0,-0.9396926164627075,0.3420201539993286,-37.26823043823242],[0,0,0,1]],"projMatrix":[[3.732050895690918,0,0,0],[0,3.732050895690918,0,0],[0,0,-3.863703727722168,-136.7362060546875],[0,0,-1,0]],"skipRedraw":false,"userMatrix":[[1,0,0,0],[0,0.3420201433256682,0.9396926207859085,0],[0,-0.9396926207859085,0.3420201433256682,0],[0,0,0,1]],"userProjection":[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],"scale":[1,1,1],"viewport":{"x":0,"y":0,"width":1,"height":1},"zoom":1,"bbox":[-5.547382354736328,4.589567184448242,-5.948190689086914,8.073392868041992,-3.658607959747314,5.623013973236084],"windowRect":[112,135,368,391],"family":"sans","font":1,"cex":1,"useFreeType":false,"fontname":"TT Arial","maxClipPlanes":8,"glVersion":4.6,"activeSubscene":0},"embeddings":{"viewport":"replace","projection":"replace","model":"replace","mouse":"replace"},"objects":[12,13,14,15,11],"subscenes":[],"flags":35139}},"crosstalk":{"key":[],"group":[],"id":[],"options":[]},"width":672,"height":480,"buffer":{"accessors":[{"bufferView":0,"componentType":5126,"count":1536,"type":"VEC3"},{"bufferView":1,"componentType":5126,"count":1536,"type":"VEC3"},{"bufferView":2,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":3,"componentType":5126,"count":384,"type":"VEC3"},{"bufferView":4,"componentType":5126,"count":80,"type":"VEC3"},{"bufferView":5,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":6,"componentType":5126,"count":80,"type":"VEC3"},{"bufferView":7,"componentType":5126,"count":24,"type":"VEC3"},{"bufferView":8,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":9,"componentType":5126,"count":12,"type":"VEC3"},{"bufferView":10,"componentType":5126,"count":1,"type":"VEC4"},{"bufferView":11,"componentType":5121,"count":1,"type":"VEC3"},{"bufferView":12,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":13,"componentType":5121,"count":1,"type":"VEC3"}],"bufferViews":[{"buffer":0,"byteLength":18432,"byteOffset":0},{"buffer":0,"byteLength":18432,"byteOffset":18432},{"buffer":0,"byteLength":4,"byteOffset":36864},{"buffer":0,"byteLength":4608,"byteOffset":36868},{"buffer":0,"byteLength":960,"byteOffset":41476},{"buffer":0,"byteLength":4,"byteOffset":42436},{"buffer":0,"byteLength":960,"byteOffset":42440},{"buffer":0,"byteLength":288,"byteOffset":43400},{"buffer":0,"byteLength":4,"byteOffset":43688},{"buffer":0,"byteLength":144,"byteOffset":43692},{"buffer":0,"byteLength":16,"byteOffset":43836},{"buffer":0,"byteLength":3,"byteOffset":43852},{"buffer":0,"byteLength":4,"byteOffset":43855},{"buffer":0,"byteLength":3,"byteOffset":43859}],"buffers":[{"byteLength":43862,"bytes":""}]},"context":{"shiny":false,"rmarkdown":"html_document"},"vertexShader":"","fragmentShader":"","players":[],"webGLoptions":{"preserveDrawingBuffer":true}},"evals":[],"jsHooks":[]}</script>
+<p id="rgl45276-aria" hidden></p>
+</div>
 </div>
 <div id="comparar-mis-abundancias" class="section level1">
 <h1>Comparar mis abundancias</h1>
@@ -485,16 +474,55 @@ points(data[, c(1:2)])</code></pre>
 <h1>Abundancias</h1>
 <pre class="r"><code>abund &lt;- read.csv(&quot;ab_A_mon.csv&quot;, header = TRUE, sep = &quot;,&quot;)
 head(abund)</code></pre>
+<div class="data-frame">
+<table class="table table-condensed">
+<thead><tr><th scope=col>SampleID</th><th scope=col>Original_Species</th><th scope=col>Valid_Species</th><th scope=col>Abundance</th></tr></thead>
+<tbody>
+	<tr><td> 46</td><td>Akodon montensis</td><td>Akodon montensis</td><td> 10</td></tr>
+	<tr><td> 67</td><td>Akodon montensis</td><td>Akodon montensis</td><td>110</td></tr>
+	<tr><td> 69</td><td>Akodon montensis</td><td>Akodon montensis</td><td> 60</td></tr>
+	<tr><td> 71</td><td>Akodon montensis</td><td>Akodon montensis</td><td> 19</td></tr>
+	<tr><td> 72</td><td>Akodon montensis</td><td>Akodon montensis</td><td> 55</td></tr>
+	<tr><td> 76</td><td>Akodon montensis</td><td>Akodon montensis</td><td> 35</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="localidades" class="section level1">
 <h1>Localidades</h1>
 <pre class="r"><code>loc &lt;- read.csv(&quot;Localities.csv&quot;, header = TRUE, sep = &quot;,&quot;)
 head(loc)</code></pre>
+<div class="data-frame">
+<table class="table table-condensed">
+<thead><tr><th scope=col>SampleID</th><th scope=col>Latitude</th><th scope=col>Longitude</th></tr></thead>
+<tbody>
+	<tr><td>1</td><td>-6.74000</td><td>-35.14583</td></tr>
+	<tr><td>2</td><td>-6.74000</td><td>-35.14583</td></tr>
+	<tr><td>3</td><td>-7.59083</td><td>-35.49083</td></tr>
+	<tr><td>4</td><td>-7.59083</td><td>-35.49083</td></tr>
+	<tr><td>5</td><td>-7.89167</td><td>-35.17667</td></tr>
+	<tr><td>6</td><td>-7.93694</td><td>-35.02643</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="unir-los-datos" class="section level1">
 <h1>Unir los datos</h1>
 <pre class="r"><code>df_merge &lt;- na.omit(merge(abund, loc, by = &quot;SampleID&quot;, all.x = TRUE, all.y = TRUE))
 head(df_merge)</code></pre>
+<div class="data-frame">
+<table class="table table-condensed">
+<thead><tr><th scope=col>SampleID</th><th scope=col>Original_Species</th><th scope=col>Valid_Species</th><th scope=col>Abundance</th><th scope=col>Latitude</th><th scope=col>Longitude</th></tr></thead>
+<tbody>
+	<tr><td>46</td><td>Akodon montensis</td><td>Akodon montensis</td><td>10</td><td>-19.93333</td><td>-43.88333</td></tr>
+	<tr><td>67</td><td>Akodon montensis</td><td>Akodon montensis</td><td>110</td><td>-20.89919</td><td>-44.83653</td></tr>
+	<tr><td>69</td><td>Akodon montensis</td><td>Akodon montensis</td><td>60</td><td>-21.00020</td><td>-43.99996</td></tr>
+	<tr><td>71</td><td>Akodon montensis</td><td>Akodon montensis</td><td>19</td><td>-21.26667</td><td>-44.61667</td></tr>
+	<tr><td>72</td><td>Akodon montensis</td><td>Akodon montensis</td><td>55</td><td>-21.30000</td><td>-44.97500</td></tr>
+	<tr><td>76</td><td>Akodon montensis</td><td>Akodon montensis</td><td>35</td><td>-21.55000</td><td>-47.85000</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="extraer-información-del-modelo" class="section level1">
 <h1>Extraer información del modelo</h1>
@@ -506,24 +534,33 @@ colnames(cor_data) &lt;- c(&quot;abun&quot;, &quot;DNC&quot;)
 cor_data &lt;- as.data.frame(cor_data)
 cor_data$DNC &lt;- 1-cor_data$DNC
 head(cor_data)</code></pre>
+<div class="data-frame">
+<table class="table table-condensed">
+<thead><tr><th scope=col>abun</th><th scope=col>DNC</th></tr></thead>
+<tbody>
+	<tr><td>19</td><td>0.9962330</td></tr>
+	<tr><td>55</td><td>0.9964044</td></tr>
+	<tr><td>35</td><td>0.9967141</td></tr>
+	<tr><td>18</td><td>0.9926036</td></tr>
+	<tr><td>22</td><td>0.9926036</td></tr>
+	<tr><td>61</td><td>0.9991869</td></tr>
+</tbody>
+</table>
 </div>
-<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve"
-class="section level1">
+</div>
+<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve" class="section level1">
 <h1>¿Cómo se mide la distancia al centroide? (Suitability en MVE)</h1>
 <p><img src="images/ell2.jpg" width="1399" /></p>
 </div>
-<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve-1"
-class="section level1">
+<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve-1" class="section level1">
 <h1>¿Cómo se mide la distancia al centroide? (Suitability en MVE)</h1>
 <p><img src="images/ell.jpg" width="1399" /></p>
 </div>
-<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve-2"
-class="section level1">
+<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve-2" class="section level1">
 <h1>¿Cómo se mide la distancia al centroide? (Suitability en MVE)</h1>
 <p><img src="images/ell3.jpg" width="1195" /></p>
 </div>
-<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve-3"
-class="section level1">
+<div id="cómo-se-mide-la-distancia-al-centroide-suitability-en-mve-3" class="section level1">
 <h1>¿Cómo se mide la distancia al centroide? (Suitability en MVE)</h1>
 <p><img src="images/ell4.jpg" width="2100" /></p>
 </div>
@@ -594,22 +631,19 @@ plot(abund_raster, main = &quot;Abundancia Predicha&quot;)</code></pre>
 <div id="datos-genéticos" class="section level1">
 <h1>Datos genéticos</h1>
 <p><strong>Más diversidad genética en el centroide?</strong></p>
-<p><a href="https://doi.org/10.1002/ecs2.3134"
-class="uri">https://doi.org/1.1002/ecs2.3134</a></p>
+<p><a href="https://doi.org/10.1002/ecs2.3134" class="uri">https://doi.org/10.1002/ecs2.3134</a></p>
 <p><img src="images/gen1.jpg" width="649" /></p>
 </div>
 <div id="datos-genéticos-1" class="section level1">
 <h1>Datos genéticos</h1>
 <p><strong>Más diversidad genética en los márgenes?</strong></p>
-<p><a href="https://doi.org/10.1002/ecs2.3134"
-class="uri">https://doi.org/10.1002/ecs2.3134</a></p>
+<p><a href="https://doi.org/10.1002/ecs2.3134" class="uri">https://doi.org/10.1002/ecs2.3134</a></p>
 <p><img src="images/gen2.jpg" width="449" /></p>
 </div>
 <div id="datos-genéticos-2" class="section level1">
 <h1>Datos genéticos</h1>
 <p><strong>Expresiones de diversidad genética</strong></p>
-<p><a href="https://doi.org/10.1002/ecs2.3134"
-class="uri">https://doi.org/10.1002/ecs2.3134</a></p>
+<p><a href="https://doi.org/10.1002/ecs2.3134" class="uri">https://doi.org/10.1002/ecs2.3134</a></p>
 <p><img src="images/gen3.jpg" width="764" /></p>
 <div id="datos-morfológicos" class="section level2">
 <h2>Datos morfológicos</h2>
@@ -619,27 +653,19 @@ class="uri">https://doi.org/10.1002/ecs2.3134</a></p>
 </div>
 <div id="nota" class="section level1">
 <h1>NOTA</h1>
-<p><strong>Lo que quiera comparar está en función de la adecuación, de
-costo energético, metabolismo, sentido biológico.</strong></p>
+<p><strong>Lo que quiera comparar está en función de la adecuación, de costo energético, metabolismo, sentido biológico.</strong></p>
 <p><img src="images/bye.jpg" width="760" /></p>
 </div>
-
-
-
 
 </div>
 
 <script>
-
-// add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
   $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
-
-
 </script>
 
 <script>
